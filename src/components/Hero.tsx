@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
               <Database className="h-8 w-8 mx-auto mb-3 text-accent" />
-              <div className="text-2xl font-bold">10KB+</div>
+              <div className="text-2xl font-bold">10MB+</div>
               <div className="text-sm text-white/80">Marine Data</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -54,17 +54,21 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+               onClick={() => window.open("map/index.html", "_blank")}
             >
               Explore Data Platform
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
-            >
-              Research Programs
-            </Button>
+<Button 
+  size="lg" 
+  variant="outline" 
+  className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300"
+  onClick={() => window.open("https://3d.wildflow.ai/C0r4Lm7", "_blank")}
+>
+  Visualization
+</Button>
+
+
           </div>
         </div>
       </div>

@@ -42,8 +42,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_1a5695q",   // ⬅️ Replace with your EmailJS Service ID
-        "template_vpd584b",  // ⬅️ Replace with your EmailJS Template ID
+        "service_q2hmd5i",   // ⬅️ Replace with your EmailJS Service ID
+        "template_unrb3rb",  // ⬅️ Replace with your EmailJS Template ID
         {
           to_email: "chauhanvishvanshu@gmail.com", // Your email
           firstName: formData.firstName,
@@ -53,7 +53,7 @@ const Contact = () => {
           subject: formData.subject,
           message: formData.message,
         },
-        "6bAkw1r0s8XMf6Aig"    // ⬅️ Replace with your EmailJS Public Key
+        "jGSJZQy5_sTyxyPD4"    // ⬅️ Replace with your EmailJS Public Key
       )
       .then(
         () => {

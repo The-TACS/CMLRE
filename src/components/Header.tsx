@@ -17,7 +17,6 @@ const Header = () => {
     { name: "AI Assistant", href: "/ai-assistant", icon: <Bot className="h-4 w-4 mr-2" /> },
     { name: "About", href: "/about", icon: <Info className="h-4 w-4 mr-2" /> },
     { name: "Contact", href: "/contact", icon: <Phone className="h-4 w-4 mr-2" /> },
-    { name: "Visualization", href: "https://3d.wildflow.ai/C0r4Lm7", icon: <Globe className="h-4 w-4 mr-2" /> },
   ];
 
   return (

@@ -4,20 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CMLRE - Centre for Marine Living Resources and Ecology</title>
-    <meta name="description" content="India's premier marine research institute under the Ministry of Earth Sciences, advancing ocean science for sustainable development and ecosystem conservation." />
+    <meta
+      name="description"
+      content="India's premier marine research institute under the Ministry of Earth Sciences, advancing ocean science for sustainable development and ecosystem conservation."
+    />
     <meta name="author" content="CMLRE" />
-    <meta name="keywords" content="marine research, oceanography, biodiversity, sustainable fisheries, blue economy, India, Ministry of Earth Sciences" />
+    <meta
+      name="keywords"
+      content="marine research, oceanography, biodiversity, sustainable fisheries, blue economy, India, Ministry of Earth Sciences"
+    />
 
-    <meta property="og:title" content="CMLRE - Centre for Marine Living Resources and Ecology" />
-    <meta property="og:description" content="India's premier marine research institute advancing ocean science for sustainable development and ecosystem conservation." />
+    <meta
+      property="og:title"
+      content="CMLRE - Centre for Marine Living Resources and Ecology"
+    />
+    <meta
+      property="og:description"
+      content="India's premier marine research institute advancing ocean science for sustainable development and ecosystem conservation."
+    />
     <meta property="og:type" content="website" />
-  
-
-   
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ✅ Chatbase Widget Script -->
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "AwVFMaNHe1KO1q_69YxnC"; <!-- 👈 यहाँ अपना agentId डालना है -->
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
   </body>
 </html>
