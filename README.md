@@ -38,8 +38,7 @@ numpy — Numerical operations
 
 🚀 Getting Started
 1. Clone the Repository
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone (https://oceanpulse-data-hub.netlify.app/)
 
 2. Open in Google Colab
 
